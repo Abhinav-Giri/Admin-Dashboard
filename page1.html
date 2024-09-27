@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Share Status</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #3b5998;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.status-update {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.status-input {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.share-button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-button:hover {
+    background-color: #2e4684;
+}
+
+.status-feed {
+    margin-top: 2rem;
+}
+
+.status {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.status-text {
+    margin: 0 0 1rem;
+}
+
+.status-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.like-button,
+.comment-button,
+.share-button {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button:hover,
+.comment-button:hover,
+.share-button:hover {
+    background-color: #2e4684;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Social Save Status</h1>
+    </header>
+    <main class="main-content">
+        <section class="status-update">
+            <textarea class="status-input" placeholder="What's on your mind?"></textarea>
+            <button class="share-button">Share</button>
+        </section>
+        <section class="status-feed">
+            <div class="status">
+                <p class="status-text">Just had an amazing lunch! #foodie</p>
+                <div class="status-actions">
+                    <button class="like-button">Like</button>
+                    <button class="comment-button">Comment</button>
+                    <button class="share-button">Share</button>
+                </div>
+            </div>
+            <div class="status">
+                <p class="status-text">Loving the weather today! ☀️</p>
+                <div class="status-actions">
+                    <button class="like-button">Like</button>
+                    <button class="comment-button">Comment</button>
+                    <button class="share-button">Share</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">© 2024 Social Share Status. All rights reserved.</p>
+    </footer>
+</body>
+</html>
